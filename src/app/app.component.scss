@@ -1,78 +1,99 @@
 .header{
     display: flex;
-    flex-direction: row;
-    @media (max-width:620px){
-        flex-direction: column;
+    @media screen and (max-width:520px){
+        display: block;
     }
     &__logo{
-        width: 60vw;
-        @media (max-width:620px){
-            width: 100%;
-            display: flex;
-            justify-content: center;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        @media screen and (max-width:520px){
+            width: 80%;
+            margin:auto;
         }
         &__img{
             width: 100%;
-            height: 100%;
-            max-width: 300px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            margin-left: 20px;
+            max-width: 80%;
+            min-width: 20%;
+            height: auto;
         }
     }
     &__nav-bar{
-        margin-top: 10px;
-        width: 100%;
+        width: 50%;
         display: flex;
-        flex-direction: column;
         align-items: center;
-        text-align: center;
-        padding: 0 50px;
-        &__nav-link{
-            text-decoration: none;
-            font-family: Roboto;
-            font-size: 16px;
-            font-weight: normal;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.38;
-            letter-spacing: 0.14px;
-            color: #0040a8;
+        @media screen and (max-width:520px){
+            width: 100%;
+        }
+        &__ul{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 80%;
+            margin:auto;
+            padding:0;
+            &__li{
+                list-style: none;
+                &__nav-link{
+                    text-decoration: none;
+                    font-family: 'DTLArgoST';
+                    font-size: 16px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.31;
+                    letter-spacing: -0.8px;
+                    text-align: center;
+                    color: #0040a8;
+                }
+            }
         }
     }
 }
 
-.ctn-title{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    width: 100%;
-
-    &__line-one{
-
-    }
-    &__line-two{
-
-    }
-}
-
-li{
-    list-style: none;
-    text-align: center;
-
-}
-
-ul{
-    width: 35vw;
-    display: flex;
-    justify-content: space-around;
-    @media (max-width:620px){
-        display: block;
+.body{
+    &__ctn-title{
+        width: 80%;
         margin: auto;
-        width: 100%;
-        text-align: center;
+        &__line-one{
+            animation-name: title-animated-1;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            visibility: hidden;
+        }
+        &__line-two{
+            display: flex;
+            justify-content: center;
+            animation-name: title-animated-2;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+            // -webkit-animation-name:$animation-name;
+            // -webkit-animation-duration: $animation-duration;
+            // -webkit-animation-fill-mode: forwards;
+            // -webkit-animation-timing-function: cubic-bezier(0.1, 1, 0.1, 1);
+        }
+
     }
 }
+
+@keyframes title-animated-1 {
+    0%{
+        display: block;
+        position: relative;
+        left:-10;
+    }
+    100%{
+        left:50%;
+    }
+}
+@keyframes title-animated-2 {
+    0%{
+        visibility: visible;
+        position: relative;
+        left:-10;
+    }
+    100%{
+        left:50%;
+    }
+}
+
