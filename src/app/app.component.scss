@@ -57,9 +57,10 @@
         margin: auto;
         &__line-one{
             animation-name: title-animated-1;
-            animation-duration: 2s;
+            animation-duration: 10s;
             animation-fill-mode: forwards;
             visibility: hidden;
+            text-align: center;
         }
         &__line-two{
             display: flex;
@@ -67,10 +68,7 @@
             animation-name: title-animated-2;
             animation-duration: 5s;
             animation-fill-mode: forwards;
-            // -webkit-animation-name:$animation-name;
-            // -webkit-animation-duration: $animation-duration;
-            // -webkit-animation-fill-mode: forwards;
-            // -webkit-animation-timing-function: cubic-bezier(0.1, 1, 0.1, 1);
+
         }
 
     }
@@ -78,12 +76,15 @@
 
 @keyframes title-animated-1 {
     0%{
+        left:-50%;
+        visibility:visible;
         display: block;
         position: relative;
-        left:-10;
     }
     100%{
-        left:50%;
+        visibility:visible;
+        left:100%;
+
     }
 }
 @keyframes title-animated-2 {
