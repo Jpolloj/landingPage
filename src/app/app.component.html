@@ -18,15 +18,34 @@
 </header>
 
 <body clas="body">
-  <div class="body__ctn-title">
-    <div class="body__ctn-title__line-one">Comienza a hacer tu proyecto</div>
-    <div class="body__ctn-title__line-two">empresarial realidad</div>
+  <section class="welcome-banner">
+    <div class="body__ctn-title">
+      <div class="body__ctn-title__line-one">Comienza a hacer tu proyecto</div>
+      <div class="body__ctn-title__line-two">empresarial realidad</div>
+    </div>
+  </section>
+
+<section class="informaction-video">
+  <div class="body__ctn-video">
+      <iframe width="1070" height="302" src="https://www.youtube.com/embed/bBD-pQI8a2E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
-  <form id="form" class="form" onsubmit="submit">
-    <label for="email" class="form__lbl-email">
-      <input id="email" type="email" name="email" class="form__lbl-email__ipt-email" placeholder="Ingrese su correo electronico">
+</section>
+<section class="contact-us">
+  <form id="form" class="body__form" onsubmit="submit">
+    <label for="email" class="body__form__lbl-email">
+      <!-- <input id="email" type="email" name="email" class="body__form__lbl-email__ipt-email" placeholder="Ingrese su correo electronico"> -->
+      <input id="email"
+      type="number" min="0.00" min="1000.00" step="000.000.000.01"
+      name="email" class="body__form__lbl-email__ipt-email" placeholder="Ingrese su correo electronico">
     </label>
+
+
   </form>
+  <label for="broker_fees">Broker Fees</label>
+  <span class="gbp">
+    <input type="number" placeholder="Enter whole GBP (&pound;) or zero for none" min="0" max="10000" step="1" value="" name="Broker_Fees" id="broker_fees" required="required" />
+  </span>
+</section>
 </body>
 <footer>
 </footer>
