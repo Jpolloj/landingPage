@@ -1,42 +1,94 @@
 <header id="header" class="header">
-  <div id="header-img" class="header__logo">
-    <img src="../assets/img/Logo_Isoft.jpg" class="header__logo__img"> 
+  <div class="header__logo">
+    <!--
+    <img src="../assets/img/Logo_Isoft.jpg" class="header__logo__img"  id="header-img"> 
+    -->
+    <img src="https://i.pinimg.com/originals/1a/8d/e2/1a8de2f1e3d8998d1540f08d0a258bef.jpg" class="header__logo__img"  id="header-img"> 
   </div>
   <nav id="nav-bar" class="header__nav-bar">
     <ul class="header__nav-bar__ul">
       <li class="header__nav-bar__ul__li">
-        <a class="header__nav-bar__ul__li__nav-link" href="#products">Productos</a>
+        <a class="nav-link" href="#products">Productos</a>
       </li>
       <li class="header__nav-bar__ul__li">
-        <a class="header__nav-bar__ul__li__nav-link" href="#us">Nosotros</a>
+        <a class="nav-link" href="#us">Nosotros</a>
       </li>
       <li class="header__nav-bar__ul__li">
-        <a class="header__nav-bar__ul__li__nav-link" href="#contact">Contactanos</a>
+        <a class="nav-link" href="#contact">Contactanos</a>
       </li>
     </ul>
   </nav>
 </header>
 
-<body clas="body">
-  <section class="welcome-banner">
+<body class="body">
+  <section class="welcome-banner" id="us">
     <div class="body__ctn-title">
       <div class="body__ctn-title__line-one">Comienza a hacer tu proyecto</div>
       <div class="body__ctn-title__line-two">empresarial realidad</div>
     </div>
   </section>
 
-<section class="informaction-video">
-  <div class="body__ctn-video">
-      <iframe width="1070" height="302" src="https://www.youtube.com/embed/bBD-pQI8a2E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-</section>
-<section class="contact-us">
-  <form id="form" class="body__form" onsubmit="submit">
-    <label for="email" class="body__form__lbl-email">
-      <input id="email" type="email" name="email" class="body__form__lbl-email__ipt-email" placeholder="Ingrese su correo electronico">
-    </label>
-  </form>
-</section>
+  <section class="informaction-video">
+    <div class="body__ctn-video">
+        <iframe width="1070" height="302" src="https://www.youtube.com/embed/bBD-pQI8a2E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section class="contact-us" id="contact">
+    <form id="form" class="body__form" onsubmit="submit">
+      <div class="body__form__title">Ingresa tu correo, déjanos guiarte</div>
+      <label for="email" class="body__form__lbl-email">
+        <input id="email" type="email" name="email" class="body__form__lbl-email__ipt-email" placeholder="Ingrese su correo electronico">
+      </label>
+    </form>
+  </section>
+  <section class="services" id="products">
+    <div class="body__ctn-services">
+      <div class="body__ctn-services__service1">
+        <div class="s1-icon">
+          <img src="https://image.flaticon.com/icons/png/128/30/30895.png" class="s1-icon__img"> 
+        </div>
+        <div class="s1-text">
+          <div class="s1-text__description">
+            Conectividad y al integración
+          </div> 
+          <div class="s1-text__description2">
+            Lleve su negocio al siguiente nivel, apoyado en la consultoria y asesoria<br>
+            de los mejores profesionales en el mercado
+          </div>
+        </div>
+      </div>
+      <div class="body__ctn-services__service1">
+        <div class="s1-icon">
+          <img src="https://image.flaticon.com/icons/png/128/1890/1890037.png" class="s1-icon__img"> 
+        </div>
+        <div class="s1-text">
+          <div class="s1-text__description">
+            Conectividad y al integración
+          </div> 
+          <div class="s1-text__description2">
+            Lleve su negocio al siguiente nivel, apoyado en la consultoria y asesoria<br>
+            de los mejores profesionales en el mercado
+          </div>
+        </div>
+      </div>
+      <div class="body__ctn-services__service1">
+        <div class="s1-icon">
+          <img src="https://image.flaticon.com/icons/png/128/702/702814.png" class="s1-icon__img"> 
+        </div>
+        <div class="s1-text">
+          <div class="s1-text__description">
+            Conectividad y al integración
+          </div> 
+          <div class="s1-text__description2">
+            Lleve su negocio al siguiente nivel, apoyado en la consultoria y asesoria<br>
+            de los mejores profesionales en el mercado
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 <footer>
 </footer>
+
